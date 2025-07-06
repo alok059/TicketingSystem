@@ -14,5 +14,37 @@
     "movie_id": "M1144D3PN",
     "showtime_id": "S0736OWV0",
     "seat": "E4"
+  },
+  {
+    "id": "B8537Y8HW",
+    "user_id": "U8537QR63",
+    "user_name": "Alok Shree Koirala",
+    "movie_id": "M4721YP1Z",
+    "showtime_id": "S2122EFQF",
+    "seat": "A2"
+  },
+  {
+    "id": "B8537JY39",
+    "user_id": "U8537QR63",
+    "user_name": "Alok Shree Koirala",
+    "movie_id": "M4721YP1Z",
+    "showtime_id": "S2122EFQF",
+    "seat": "B4"
+  },
+  {
+    "id": "B8537SH6L",
+    "user_id": "U8537QR63",
+    "user_name": "Alok Shree Koirala",
+    "movie_id": "M4721YP1Z",
+    "showtime_id": "S2122EFQF",
+    "seat": "B6"
+  },
+  {
+    "id": "B8537ZBXW",
+    "user_id": "U8537QR63",
+    "user_name": "Alok Shree Koirala",
+    "movie_id": "M4721YP1Z",
+    "showtime_id": "S2122EFQF",
+    "seat": "C8"
   }
 ]
