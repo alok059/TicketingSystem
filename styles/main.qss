@@ -1,0 +1,445 @@
+/* Movie Ticket Booking System - Modern QSS Styles */
+
+/* Seat Button Specific Styles - Must come first to override general styles */
+QPushButton[class="seat"] {
+    background-color: white;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 8pt;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 20px;
+    max-height: 20px;
+    padding: 0px;
+}
+
+
+
+QPushButton[class="seat"]:hover {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+/* Seat states */
+QPushButton[class="seat"][state="available"] {
+    background-color: white;
+    border: 2px solid #bdc3c7;
+    color: #2c3e50;
+}
+
+QPushButton[class="seat"][state="available"]:hover {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+QPushButton[class="seat"][state="selected"] {
+    background-color: #27ae60;
+    border: 2px solid #229954;
+    color: white;
+}
+
+QPushButton[class="seat"][state="selected"]:hover {
+    background-color: #58d68d;
+    border-color: #58d68d;
+}
+
+QPushButton[class="seat"][state="booked"] {
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    color: white;
+}
+
+QPushButton[class="seat"][state="booked"]:disabled {
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    color: white;
+}
+
+/* Global Styles */
+QWidget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+}
+
+/* Main Window */
+QMainWindow {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #3498db, stop:1 #2980b9);
+    color: white;
+}
+
+QMainWindow QLabel {
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+QMainWindow QLabel[class="title"] {
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* General Button Styles */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #3498db, stop:1 #2980b9);
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    min-height: 20px;
+    font-size: 11pt;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #5dade2, stop:1 #3498db);
+    border-color: #5dade2;
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2980b9, stop:1 #21618c);
+    border-color: #21618c;
+}
+
+QPushButton:disabled {
+    background: #bdc3c7;
+    border-color: #95a5a6;
+    color: #7f8c8d;
+}
+
+/* Special Button Styles */
+QPushButton#admin_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #e74c3c, stop:1 #c0392b);
+    border-color: #c0392b;
+}
+
+QPushButton#admin_btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #ec7063, stop:1 #e74c3c);
+    border-color: #ec7063;
+}
+
+QPushButton#book_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #27ae60, stop:1 #229954);
+    border-color: #229954;
+}
+
+QPushButton#book_btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #58d68d, stop:1 #27ae60);
+    border-color: #58d68d;
+}
+
+QPushButton#cancel_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #f39c12, stop:1 #e67e22);
+    border-color: #e67e22;
+}
+
+QPushButton#cancel_btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #f7dc6f, stop:1 #f39c12);
+    border-color: #f7dc6f;
+}
+
+/* Dialogs */
+QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #ffffff, stop:1 #f8f9fa);
+    border: 2px solid #3498db;
+    border-radius: 12px;
+}
+
+QDialog QLabel {
+    color: #2c3e50;
+    font-size: 11pt;
+    font-weight: 500;
+}
+
+QDialog QLabel[class="title"] {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 10px;
+}
+
+/* Input Fields */
+QLineEdit {
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+    color: #2c3e50;
+    font-size: 10pt;
+    selection-background-color: #3498db;
+}
+
+QLineEdit:focus {
+    border-color: #3498db;
+    background-color: #f8f9fa;
+}
+
+QLineEdit:disabled {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    border-color: #bdc3c7;
+}
+
+/* Combo Boxes */
+QComboBox {
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: white;
+    color: #2c3e50;
+    font-size: 10pt;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border-color: #3498db;
+}
+
+QComboBox:focus {
+    border-color: #3498db;
+    background-color: #f8f9fa;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #2c3e50;
+    margin-right: 8px;
+}
+
+QComboBox QAbstractItemView {
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    background-color: white;
+    selection-background-color: #3498db;
+    selection-color: white;
+}
+
+/* List Widgets */
+QListWidget {
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: white;
+    alternate-background-color: #f8f9fa;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+QListWidget::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QListWidget::item:hover {
+    background-color: #ecf0f1;
+}
+
+/* Group Boxes */
+QGroupBox {
+    font-weight: bold;
+    font-size: 11pt;
+    color: #2c3e50;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 8px 0 8px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Seat Selection Specific Styles */
+QFrame#screen {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #34495e, stop:1 #2c3e50);
+    border: 3px solid #2c3e50;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+QFrame#screen QLabel {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/* Legend Styles */
+QLabel[class="legend"] {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 2px;
+    font-size: 9pt;
+    min-width: 20px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 40px;
+    text-align: center;
+}
+
+QLabel[class="legend-available"] {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    color: #2c3e50;
+    min-width: 20px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 40px;
+}
+
+QLabel[class="legend-selected"] {
+    background-color: #27ae60;
+    border: 1px solid #229954;
+    color: white;
+    min-width: 20px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 40px;
+}
+
+QLabel[class="legend-booked"] {
+    background-color: #e74c3c;
+    border: 1px solid #c0392b;
+    color: white;
+    min-width: 20px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 40px;   
+}
+
+/* Row Labels in Seat Grid */
+QLabel[class="row-label"] {
+    background-color: #34495e;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid #bdc3c7;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 10pt;
+    min-width: 20px;
+    max-width: 40px;
+    min-height: 20px;
+    max-height: 40px;
+    text-align: center;
+}
+
+/* Message Boxes */
+QMessageBox {
+    background-color: white;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+QMessageBox QLabel {
+    color: #2c3e50;
+    font-size: 10pt;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 25px;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical {
+    background-color: #ecf0f1;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #bdc3c7;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #95a5a6;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background-color: #ecf0f1;
+    height: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #bdc3c7;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #95a5a6;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Status and Info Labels */
+QLabel[class="info"] {
+    color: #3498db;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+QLabel[class="warning"] {
+    color: #e67e22;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+QLabel[class="error"] {
+    color: #e74c3c;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+QLabel[class="success"] {
+    color: #27ae60;
+    font-size: 10pt;
+    font-weight: bold;
+} 

@@ -1,0 +1,54 @@
+/* Seat Button Specific Styles */
+QPushButton[class="seat"] {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 2px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 10pt;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 0px;
+}
+
+QPushButton[class="seat"]:hover {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+/* Seat states */
+QPushButton[class="seat"][state="available"] {
+    background-color: white;
+    border: 2px solid #bdc3c7;
+    color: #2c3e50;
+}
+
+QPushButton[class="seat"][state="available"]:hover {
+    border-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+QPushButton[class="seat"][state="selected"] {
+    background-color: #27ae60;
+    border: 2px solid #229954;
+    color: white;
+}
+
+QPushButton[class="seat"][state="selected"]:hover {
+    background-color: #58d68d;
+    border-color: #58d68d;
+}
+
+QPushButton[class="seat"][state="booked"] {
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    color: white;
+}
+
+QPushButton[class="seat"][state="booked"]:disabled {
+    background-color: #e74c3c;
+    border: 2px solid #c0392b;
+    color: white;
+} 
